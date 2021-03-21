@@ -109,6 +109,7 @@ section {
 
 .logo {
   margin-right: 93px;
+  animation-duration: 3000ms;
 }
 .navigation-list {
   display: flex;
@@ -155,6 +156,13 @@ section {
 
 .email-link {
   margin-right: 50px;
+}
+
+.kontakt-list .list:hover .header-contacts-link,
+.kontakt-list .list:focus .header-contacts-link {
+    animation-name: heartBeat;
+    animation-duration: 2000ms;
+    animation-timing-function: linear;
 }
 
 /*Навигация*/
@@ -361,10 +369,10 @@ h2 {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 150ms; */
 }
 
-/* .occupation-list-item:focus .occupations-title,
+.occupation-list-item:focus .occupations-title,
 .occupation-list-item:hover .occupations-title {
     transform: scaleY(1.1);
-} */
+}
 
 .occupations-title .title {
   font-weight: bold;
